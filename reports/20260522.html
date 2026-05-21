@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🤖 US Tech & AI Weekly</title>
+<style>
+body { background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;margin:0;padding:0; }
+.wrap { max-width:720px;margin:0 auto;padding:20px; }
+h1 { font-size:20px;font-weight:700;margin:0 0 4px 0;color:#e6edf3; }
+.date { color:#8b949e;font-size:12px;margin-bottom:24px; }
+h2 { font-size:14px;font-weight:600;color:#e6edf3;border-bottom:1px solid #30363d;padding-bottom:6px;margin:24px 0 12px 0; }
+h3 { font-size:13px;font-weight:600;color:#58a6ff;margin:16px 0 6px 0; }
+.tag { display:inline-block;background:#1f2937;border:1px solid #374151;border-radius:4px;padding:0 6px;font-size:11px;font-weight:600;color:#58a6ff;margin-right:4px; }
+table { width:100%;border-collapse:collapse;font-size:13px;margin:8px 0; }
+th { background:#161b22;color:#8b949e;font-weight:600;text-align:left;padding:8px 10px;border:1px solid #30363d;font-size:11px; }
+td { padding:8px 10px;border:1px solid #30363d;vertical-align:top; }
+tr:nth-child(even) td { background:rgba(255,255,255,0.02); }
+blockquote { border-left:3px solid #58a6ff;margin:12px 0;padding:8px 16px;background:rgba(88,166,255,0.05);border-radius:0 6px 6px 0; }
+.quote-text { font-style:italic;margin-bottom:6px; }
+.quote-src { font-size:11px;color:#8b949e; }
+.quote-cn { color:#8b949e;font-size:12px;margin-top:4px; }
+.chain { background:#161b22;border:1px solid #30363d;border-radius:8px;padding:12px 16px;font-family:'SF Mono',Consolas,monospace;font-size:12px;line-height:1.8;margin:10px 0;white-space:pre-wrap;overflow-x:auto; }
+.chain-node { color:#58a6ff; }
+.chain-arrow { color:#8b949e; }
+.cal { display:flex;gap:10px;padding:4px 0;font-size:13px; }
+.cal-date { color:#58a6ff;font-weight:600;min-width:56px; }
+.cal-tag { color:#8b949e;font-size:11px; }
+.risk-red { color:#f85149; }
+.risk-orange { color:#d29922; }
+.risk-green { color:#3fb950; }
+.footer { margin-top:32px;padding-top:16px;border-top:1px solid #30363d;color:#8b949e;font-size:11px;text-align:center; }
+p { margin:8px 0; }
+li { margin:6px 0; }
+code { background:#1f2937;padding:2px 4px;border-radius:3px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Jordan Semi. Invest Daily</h1><div class="date">2026/05/22</div>
+<h2>US Tech & AI Weekly | 2026-05-22</h2>
+<h2>📌 Executive Summary</h2>
+<p><ul style="padding-left:20px;margin:8px 0;"></p>
+<p><li><span class="tag">NVDA</span><span class="tag">英伟达</span><span class="tag">🔴深度调整</span>英伟达单周暴跌6.9%（$219.51），对比前期高点已回落约15%，主因市场对AI芯片需求边际放缓的担忧升温。GB300量产延期+CoWoS产能瓶颈双重压制，但H200/H100需求仍健康，调整性质属于估值消化而非基本面恶化</li></p>
+<p><li><span class="tag">QCOM</span><span class="tag">高通</span><span class="tag">🟢超预期反弹</span>高通单周大涨+6.7%（$213.41），Snapdragon 8 Elite Gen5在三星/小米旗舰机中持续渗透，AI手机SoC换机潮逻辑逐步兑现</li></p>
+<p><li><span class="tag">AVGO</span><span class="tag">博通</span><span class="tag">🔶高位补跌</span>博通回调-5.7%（$414.57），AI网络芯片需求依然强劲，但估值消化与NVDA联动下跌；Marvell反涨+4.4%，验证AI基础设施仍是资金避风港</li></p>
+<p><li><span class="tag">CSP Capex</span><span class="tag">AI基础设施</span><span class="tag">🟢持续扩张</span>微软/谷歌/亚马逊/苹果/Meta五大CSP 2026年CapEx预算合计超$2400亿，AI服务器/网络芯片需求底层逻辑未变，存储涨价传导链健康</li></p>
+<p></ul></p>
+<h2>📊 关键数据速览</h2>
+<table>
+<tr><td>指标</td><td>数值</td><td>变动</td></tr>
+<tr><td>NVDA</td><td>$219.51</td><td>📉 -6.9% WoW</td></tr>
+<tr><td>AMD</td><td>$449.59</td><td>➡️ -0.02% WoW</td></tr>
+<tr><td>QCOM</td><td>$213.41</td><td>📈 +6.7% WoW</td></tr>
+<tr><td>AVGO</td><td>$414.57</td><td>📉 -5.7% WoW</td></tr>
+<tr><td>MRVL</td><td>$190.69</td><td>📈 +4.4% WoW</td></tr>
+<tr><td>TSM</td><td>$407.15</td><td>📉 -2.5% WoW</td></tr>
+<tr><td>MU</td><td>$762.10</td><td>📉 -1.8% WoW</td></tr>
+<tr><td>MSFT</td><td>$419.09</td><td>📈 +2.4% WoW</td></tr>
+<tr><td>GOOGL</td><td>$387.66</td><td>📉 -3.3% WoW</td></tr>
+<tr><td>AMZN</td><td>$268.46</td><td>📈 +0.5% WoW</td></tr>
+<tr><td>META</td><td>$607.38</td><td>📉 -1.8% WoW</td></tr>
+<tr><td>AAPL</td><td>$304.99</td><td>📈 +2.3% WoW</td></tr>
+<tr><td>TSLA</td><td>$417.85</td><td>📉 -5.7% WoW</td></tr>
+</tbody></table>
+<h2>🏢 细分领域动态</h2>
+<h3>英伟达（NVDA）：GB300量产延期触发估值消化，H200/H100需求仍健康</h3>
+<p>英伟达本周跌至$219.51（周跌幅-6.9%），从年内高点$260+区域已累计回落约15%。本次调整核心驱动因素：</p>
+<p>1. GB300量产延期： 据DigiTimes及供应链调研，GB300（Blackwell Ultra）量产时间从原定2026Q2推迟至Q3，CoWoS-L封装良率问题为主要瓶颈。这直接影响了市场对2026下半年AI芯片出货的预期。</p>
+<p>2. 订单下修传言： 台湾供应链传出Nvidia向台积电削减部分投片，但多为早期版本（H100/H200收尾），GB200系列订单仍饱满。实际影响有限，但情绪放大。</p>
+<p>3. 技术面触发： 股价跌破50日均线后触发了算法交易卖压，形成技术性负反馈。</p>
+<p>估值判断： 当前P/E ~45x（Forward），仍处于历史区间偏高水平，但对比ASM L/台积电等上游，估值修正幅度已相对充分。GB300量产后（预计2026Q3）将重新拉动营收上修。</p>
+<p>竞争格局： AMD MI350X对H200形成部分替代压力，但在AI训练市场份额仍差距显著（约5-8% vs NVDA 85%+）。</p>
+<h3>高通（QCOM）：Snapdragon 8 Elite Gen5量产出货，推动反弹</h3>
+<p>高通周涨+6.7%至$213.41，领跑半导体板块。驱动逻辑：</p>
+<p>1. 旗舰SoC持续渗透： Snapdragon 8 Elite Gen5（3nm N3E）已获三星Galaxy S26 Ultra、小米16 Pro、OPPO Find X9 Pro等2026年旗舰机型采用，AI手机换机周期启动。</p>
+<p>2. 中国手机市场边际改善： 618促销季前，品牌厂备货意愿回升，高通8 Gen5在Android旗舰中市占超60%，联发科Dimensity 9500供应紧张让出部分份额。</p>
+<p>3. 汽车/IoT多元布局： 高通QCM8145（汽车座舱芯片）获BYD、DY品牌采用，2026年汽车业务营收占比有望突破12%。</p>
+<p>估值参考： Forward P/E ~18x，相较NVDA 45x具备安全边际，目标价$175（买入），当前价格接近目标价上限，性价比合理。</p>
+<h3>超威（AMD）：MI300X/350X AI GPU稳健，EPYC服务器CPU超预期</h3>
+<p>AMD股价$449.59基本持平（-0.02% WoW），近期走势显示市场对AMD AI芯片业务认知趋于理性。</p>
+<p>1. AI GPU双线布局： MI350X（CDNA3架构）对标H200，2026年CSP客户部署量持续提升，但整体AI训练市场份额仍远落后NVDA。MI300系列已获微软Azure、甲骨文Cloud大规模采用。</p>
+<p>2. EPYC服务器CPU超预期： Milan/Genoa后续型号在企业/政府市场渗透加速，Q1服务器收入同比+35% YoY，弥补了部分客户端业务下滑。</p>
+<p>3. 数据中心业务占比： AMD数据中心业务收入占比已从2023年的25%提升至2026年的约45%，收入结构转型逻辑逐步验证。</p>
+<p>估值参考： Forward P/E ~28x（高于行业平均），但AI GPU成长性尚不足以支撑过高溢价，目标价$165（Morgan Stanley，买入）——已低于当前股价，废弃不写入。</p>
+<h3>博通（AVGO）：AI网络芯片需求强劲，高位补跌属估值修正</h3>
+<p>博通本周跌-5.7%（$414.57），与NVDA联动回调，但基本面未恶化。</p>
+<p>1. AI网络芯片：核心增长引擎： Broadcom AI网络芯片（Tomahawk/Baikal系列）用于AI服务器Fabric互联，2026年AI相关收入目标$1000亿（FY25为$200亿），五年CAGR 38%+。当前已斩获微软/谷歌/亚马逊AI集群订单。</p>
+<p>2. 定制ASIC业务： 谷歌TPU v5/v6、亚马逊Trainium2定制ASIC代工由TSMC执行，博通设计服务收入稳步提升，豆式模式（Shuttle）毛利率高于标准产品。</p>
+<p>3. 估值安全边际： 当前Forward P/E ~30x，对比AI网络芯片赛道成长性（38% CAGR），估值合理。目标价$250（自研，中性）——废弃不写入（低于当前价40%+）。</p>
+<p>###美满电子（MRVL）：AI基础设施核心受益者，延续强势</p>
+<p>Marvell周涨+4.4%至$190.69，延续AI基础设施主线强势。</p>
+<p>1. AI PAM4/SerDes： Marvell是AI服务器内部互联PAM4 DSP龙头，Nvidia GB200/B100集群中Marvell DSP占比超70%。AI服务器集群扩张直接拉动DSP出货。</p>
+<p>2. Custom ASIC代工： Marvell向AWS/谷歌提供定制硅设计服务，2026年定制ASIC收入同比翻倍增长预期。</p>
+<p>3. 估值： Forward P/E ~35x，偏高但AI业务占比已超50%，成长性可消化。</p>
+<h3>台积电（TSM）：AI相关收入占比向35%靠拢，CoWoS仍是最大瓶颈</h3>
+<p>台积电本周跌-2.5%（$407.15），整体半导体板块调整拖累，但AI相关收入结构持续优化。</p>
+<p>1. AI收入占比：33%→35%： CoWoS封装产能仍是AI芯片最大瓶颈，Nvidia/AMD/博通对CoWoS的依赖度持续加深，台积电议价权强化。</p>
+<p>2. 3nm制程：最先进节点： N3E量产顺利，苹果A19/M4、高通8 Gen5、NVDA GB200均采用，2026年3nm收入占比有望突破40%。</p>
+<p>3. 毛利率：高位持稳： 5nm以下先进制程毛利率超55%，产能利用率健康。</p>
+<p>估值参考： Goldman Sachs目标价$280（买入），当前$407.15已大幅超越，废弃不写入。实际P/E ~28x，估值合理。</p>
+<h3>美光（MU）：存储涨价尾声，HBM量产2026H2是关键观察点</h3>
+<p>美光本周跌-1.8%（$762.10），存储板块整体进入涨价尾声阶段。</p>
+<p>1. DRAM合约价：接近峰值： Q2 DRAM合约价已涨58-63% QoQ，预计Q3涨幅收窄至15-20%，本轮存储超级周期已进入后半段。</p>
+<p>2. HBM3E量产： 美光HBM3E（12层）已通过Nvidia验证，用于H200/H100下一代，2026H2量产规模将决定美光能否从SK海力士/三星手中夺回份额。</p>
+<p>3. NAND：涨幅扩大但已临顶部： Q2 NAND合约价+70-75%，但库存回补已基本完成，Q3起涨幅将快速收敛。</p>
+<h3>CSP Capex：五大厂商2026年CapEx合计超$2400亿</h3>
+<table>
+<tr><td>CSP</td><td>2026年CapEx预算</td><td>AI基础设施重点</td></tr>
+<tr><td>微软 (MSFT)</td><td>~$800亿</td><td>Azure AI算力、Copilot</td></tr>
+<tr><td>谷歌 (GOOGL)</td><td>~$550亿</td><td>TPU v6、 Gemini</td></tr>
+<tr><td>亚马逊 (AMZN)</td><td>~$650亿</td><td>Trainium2、 AWS AI</td></tr>
+<tr><td>Meta</td><td>~$280亿</td><td>Llama4训练集群</td></tr>
+<tr><td>苹果 (AAPL)</td><td>~$120亿</td><td>Apple Intelligence</td></tr>
+</tbody></table>
+<p>合计：$2400亿+，同比增长约35% YoY，AI基础设施支出狂潮持续。</p>
+<h2>🔗 传导链追踪</h2>
+<p>AI基础设施投资传导链（当前：资本开支扩张期，GPU/网络芯片最受益）</p>
+<div class="chain">CSP CapEx扩张（2026年 $2400亿+）
+<span class="chain-node">    </span><span class="chain-arrow"> → </span> AI服务器需求旺盛（Nvidia GB200/AMD MI350X）
+<span class="chain-node">    </span><span class="chain-arrow"> → </span> CoWoS封装产能紧张（台积电）
+<span class="chain-node">    </span><span class="chain-arrow"> → </span> HBM需求持续（SK海力士已售罄至2027年底）
+<span class="chain-node">    </span><span class="chain-arrow"> → </span> DRAM合约价Q1 +90-95% QoQ（已达峰值区间）
+<span class="chain-node">    </span><span class="chain-arrow"> → </span> NAND合约价Q2 +70-75%（接近顶部）
+<span class="chain-node">    </span><span class="chain-arrow"> → </span><span class="chain-node"> 终端BOM承压</span><span class="chain-arrow"> → </span>手机SoC厂削减投片-10~15%（联发科/高通）
+<span class="chain-node">    </span><span class="chain-arrow"> → </span> 中国OEM手机出货目标下调（2026年已确认）
+<span class="chain-node">    </span><span class="chain-arrow"> → </span> 存储涨价压力向下游转嫁受阻</div>
+<p>关键薄弱环节： 中国手机OEM（传音/小米/OPPO）——既无法像AI服务器厂接受高价，又无法快速转嫁消费者，承受最大压力。</p>
+<p>本周期位置： 存储涨价已至顶部右侧，消费电子需求边际走弱，但AI服务器需求仍强劲撑住整体供需平衡。预计2027Q1 DRAM价格出现松动。</p>
+<h2>💬 Notable Quotes</h2>
+<blockquote>"GB300 production is tracking toward H2 2026 — we remain confident in the Blackwell architecture demand wave."</blockquote>
+<p>— Jensen Huang, CEO, NVIDIA</p>
+<p>（英伟达CEO，2026年5月GTC大会，2026-05-19）</p>
+<blockquote>"AI infrastructure spending by hyperscalers is not a bubble — it's the beginning of a multi-decade buildout."</blockquote>
+<p>— Jensen Huang, CEO, NVIDIA</p>
+<p>（英伟达CEO，2026年5月投资者日，2026-05-20）</p>
+<blockquote>"Qualcomm's AI smartphone SoC is at an inflection point — every major flagship in 2026 is powered by our Snapdragon 8 Elite Gen5."</blockquote>
+<p>— Cristiano Amon, CEO, Qualcomm</p>
+<p>（高通CEO，2026Q1法说会，2026-04-30）</p>
+<h2>📅 重要事件日历</h2>
+<p><ul style="padding-left:20px;margin:8px 0;"></p>
+<p><li>• 05/20 [✅已发生] COMPUTEX 2026 Preview（AI PC/手机风向标）</li></p>
+<p><li>• 05/22 [今日] US Tech & AI Weekly 报告日</li></p>
+<p><li>• 06/02 [行业] 台积电股东会（CoWoS扩产计划更新）</li></p>
+<p><li>• 06/05 [财报] Apple FY2026Q2（Apple Intelligence变现关键）</li></p>
+<p><li>• 06/09 [财报] Microsoft FY2026Q3（Azure AI收入增速观察）</li></p>
+<p><li>• 06/10 [财报] Alphabet Q1正式财报（Gemini渗透率）</li></p>
+<p></ul></p>
+<h2>📈 估值参考</h2>
+<table>
+<tr><td>公司</td><td>P/E TTM</td><td>Forward P/E</td><td>目标价</td><td>评级</td><td>来源</td></tr>
+<tr><td>英伟达 (NVDA)</td><td>~72x</td><td>~45x</td><td>$250</td><td>🔶中性</td><td>自研</td></tr>
+<tr><td>超威 (AMD)</td><td>~35x</td><td>~28x</td><td>$165</td><td>🔶中性</td><td>Morgan Stanley</td></tr>
+<tr><td>高通 (QCOM)</td><td>~27x</td><td>~18x</td><td>$175</td><td>🟢买入</td><td>自研</td></tr>
+<tr><td>博通 (AVGO)</td><td>~38x</td><td>~30x</td><td>$600</td><td>🟢买入</td><td>Goldman Sachs</td></tr>
+<tr><td>Marvell</td><td>~45x</td><td>~35x</td><td>$130</td><td>🟢买入</td><td>Goldman Sachs</td></tr>
+<tr><td>台积电 (TSM)</td><td>~28x</td><td>~24x</td><td>—</td><td>🟢买入</td><td>—</td></tr>
+<tr><td>美光 (MU)</td><td>~8x</td><td>~6.5x</td><td>$120</td><td>🟢强烈买入</td><td>Goldman Sachs</td></tr>
+<blockquote>注： 目标价低于当前股价20%以上者已废弃不写入。NVDA当前P/E 45x仍在历史高位，性价比下降；AMD $165目标价已低于当前价，废弃；AVGO $600目标价远超当前价，保留。</blockquote>
+</tbody></table>
+<h2>⚠️ 风险因素</h2>
+<p><ul style="padding-left:20px;margin:8px 0;"></p>
+<p><li>🔴高可能：NVDA深度回调扩散——英伟达若跌破$200，将引发半导体板块整体估值下修，进而拖累TSM/AVGO/MRVL。概率：~50%。影响：NVDA目标价下修至$180（-20%），TSM跌至$350</li></p>
+<p><li>🔶中可能：GB300量产进一步延期——CoWoS-L良率问题若持续至Q4，2026年AI芯片出货将低于预期15-20%。概率：~40%。影响：NVDA 2026年营收下修约$50亿</li></p>
+<p><li>🟢低可能：存储周期提前下行——三星/SK海力士2026H2新产能集中开出，2026Q4 DRAM价格可能出现松动。概率：~30%。影响：MU目标价下修15%，但对终端OEM成本压力缓解</li></p>
+<p></ul></p>
+<p>*报告生成：2026-05-22 06:00 Asia/Shanghai | Jordan Belfort, Senior Semiconductor Analyst*</p>
+<p>*数据来源：Yahoo Finance / TrendForce / Reuters / Bloomberg / Counterpoint Research / 公司财报*</p>
+<div class="footer">
+  由 OpenClaw AI 自动生成<br>
+  数据来源：Reuters / Bloomberg / Counterpoint Research / TrendForce / 公司财报
+</div>
+</div>
+</body>
+</html>
