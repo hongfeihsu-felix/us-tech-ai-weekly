@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🤖 US Tech & AI Weekly</title>
+<style>
+body { background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;margin:0;padding:0; }
+.wrap { max-width:720px;margin:0 auto;padding:20px; }
+h1 { font-size:20px;font-weight:700;margin:0 0 4px 0;color:#e6edf3; }
+.date { color:#8b949e;font-size:12px;margin-bottom:24px; }
+h2 { font-size:14px;font-weight:600;color:#e6edf3;border-bottom:1px solid #30363d;padding-bottom:6px;margin:24px 0 12px 0; }
+h3 { font-size:13px;font-weight:600;color:#58a6ff;margin:16px 0 6px 0; }
+.tag { display:inline-block;background:#1f2937;border:1px solid #374151;border-radius:4px;padding:0 6px;font-size:11px;font-weight:600;color:#58a6ff;margin-right:4px; }
+table { width:100%;border-collapse:collapse;font-size:13px;margin:8px 0; }
+th { background:#161b22;color:#8b949e;font-weight:600;text-align:left;padding:8px 10px;border:1px solid #30363d;font-size:11px; }
+td { padding:8px 10px;border:1px solid #30363d;vertical-align:top; }
+tr:nth-child(even) td { background:rgba(255,255,255,0.02); }
+blockquote { border-left:3px solid #58a6ff;margin:12px 0;padding:8px 16px;background:rgba(88,166,255,0.05);border-radius:0 6px 6px 0; }
+.quote-text { font-style:italic;margin-bottom:6px; }
+.quote-src { font-size:11px;color:#8b949e; }
+.quote-cn { color:#8b949e;font-size:12px;margin-top:4px; }
+.chain { background:#161b22;border:1px solid #30363d;border-radius:8px;padding:12px 16px;font-family:'SF Mono',Consolas,monospace;font-size:12px;line-height:1.8;margin:10px 0;white-space:pre-wrap;overflow-x:auto; }
+.chain-node { color:#58a6ff; }
+.chain-arrow { color:#8b949e; }
+.cal { display:flex;gap:10px;padding:4px 0;font-size:13px; }
+.cal-date { color:#58a6ff;font-weight:600;min-width:56px; }
+.cal-tag { color:#8b949e;font-size:11px; }
+.risk-red { color:#f85149; }
+.risk-orange { color:#d29922; }
+.risk-green { color:#3fb950; }
+.footer { margin-top:32px;padding-top:16px;border-top:1px solid #30363d;color:#8b949e;font-size:11px;text-align:center; }
+p { margin:8px 0; }
+li { margin:6px 0; }
+code { background:#1f2937;padding:2px 4px;border-radius:3px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>🤖 US Tech & AI Weekly</h1><div class="date">2026/05/27</div>
+<p>半导体与AI基础设施投资周刊 | 2026-05-27</p>
+<p>*Uncle Philips · 华尔街资深半导体产业分析师*</p>
+<h2>📌 Executive Summary</h2>
+<div class="cal"><span class="tag">🟢超预期</span> NVIDIA Q1 FY27 Revenue $81.6B（+85.2% YoY）创历史新高，Q2指引$91B继续加速，Jensen抛出Vera CPU全新$200B TAM，$20B已预购，$80B回购——AI投资狂潮远未见顶</div>
+<div class="cal"><span class="tag">🟢结构性强</span> AMD Venice EPYC 2nm量产启动，$10亿台投资锁定TSMC N2节点、Helios整机柜平台2026H2部署——CPU在Agentic AI时代重返核心地位，CPU:GPU比向1:1回归</div>
+<div class="cal"><span class="tag">🟢ASIC崛起</span> Goldman Sachs预测2027年Custom ASIC与GPU需求持平，Broadcom $73B AI积压订单、$100B FY27 AI营收目标，Meta/Alphabet将合作延至2029/2031年——定制化芯片生态从"尝试"变"标配"</div>
+<div class="cal"><span class="tag">🔶周期观察</span> HBM4加速放量，但供需失衡前置信号浮现——Micron HBM4爬坡速度是HBM3E的2倍，内存紧缺至少延续到2028年；但SK海力士iHBM散热方案发布确认HBM5已在路上，迭代加速意味着大客户锁定周期缩短</div>
+<div class="cal"><span class="tag">🔶AI手机</span> OpenAI x MediaTek定制2nm Dimensity 9600手机SoC——AI Agent原生手机呼之欲出，传统手机SoC格局面临重塑</div>
+<h2>📊 关键数据速览</h2>
+<table>
+<tr><td>指标</td><td>数值</td><td>变动</td></tr>
+<tr><td>NVIDIA Q1 FY27 营收</td><td>$81.6B</td><td>📈 +85.2% YoY，+18.6% QoQ</td></tr>
+<tr><td>NVIDIA Q2 FY27 指引</td><td>$91.0B</td><td>📈 +94.7% YoY（加速！）</td></tr>
+<tr><td>四大CSP Q1 2026 合计CapEx</td><td>$130.6B</td><td>📈 +80% YoY</td></tr>
+<tr><td>2026年四大CSP AI CapEx指引</td><td>$300B+</td><td>📈 较2025年近乎翻倍</td></tr>
+<tr><td>TSMC 2030全球芯片市场预测</td><td>$1.5T</td><td>📈 +50%（从$1T上调）</td></tr>
+<tr><td>AMD Venice EPYC核心数</td><td>256核</td><td>📈 较Turin +70%性能提升</td></tr>
+<tr><td>Broadcom AI积压订单</td><td>$73B</td><td>📈 持续累积</td></tr>
+<tr><td>Micron HBM4爬坡速度</td><td>2x HBM3E</td><td>📈 HBM供应加速但持续紧缺</td></tr>
+<tr><td>DRAM/NAND供给增长率</td><td>~16%/17%</td><td>📉 低于历史30%+均值</td></tr>
+<tr><td>全球半导体CapEx 2026</td><td>~$200B</td><td>📈 +20% YoY</td></tr>
+</tbody></table>
+<h2>🏢 细分领域动态</h2>
+<h3>NVIDIA：Q1全面超预期，Vera CPU开辟全新$200B战场</h3>
+<p>NVIDIA Q1 FY27交出了$81.6B营收（+85.2% YoY，+18.6% QoQ）的答卷，Non-GAAP EPS $1.87beat consensus，数据中心$75.2B（+97% YoY）。更惊人的是Q2 FY27指引$91.0B（+94.7% YoY），在$80B营收基础上growth还在加速。</p>
+<p>最大亮点——Jensen在Earnings Call中正式抛出Vera CPU战略：面向Agentic AI时代，CPU从辅助角色变为AI Agent的核心"数字工人"芯片。Vera并非传统云CPU（多线程优化），而是专为Token处理优化的AI原生CPU。黄仁勋给出$200B全新TAM判断，并披露FY27财年Vera standalone CPU已获$20B预购订单。每一家超大规模CSP和系统集成商都已签约部署。</p>
+<p>同时Jensen在Computex前亲赴台湾与TSMC魏哲家会面，协商Vera Rubin六芯片平台（Vera CPU + Rubin GPU + NVLink 6 + ConnectX-9 + BlueField-4 + Spectrum-X）的CoWoS产能分配。Nvidia已预占TSMC 2027年前CoWoS产能的60%，Vera Rubin各NVL72配置含近200万个零件、150家台湾供应链合作伙伴，Q3起正式量产爬坡。</p>
+<p>此前$20B Vera CPU预购+$80B回购+25倍股息提升——管理层信心极其强烈。</p>
+<h3>Broadcom：定制化AI芯片之王，$73B积压再扩张</h3>
+<p>Broadcom本周三重催化叠加：（1）与Meta延长定制芯片合作至2029年，从MTIA 500到下一代架构，初始>1GW部署；（2）联手Meta/Applied Materials/GlobalFoundries/Synopsys投入$125M成立UCLA半导体中心，聚焦Custom AI芯片研发；（3）Alphabet合作延长至2031年，Google Ironwood TPU持续由其设计。</p>
+<p>Goldman Sachs预测Broadcom在Custom ASIC市场将维持60%份额，2027年Custom ASIC将达到与GPU需求持平。Broadcom FY26Q2（6月3日盘后公布）AI芯片营收指引$10.7B（vs Q1 $8.4B），全年AI backlog $73B，管理层"line of sight"到FY27超$100B AI年营收。</p>
+<p>Spectrum-X时代，Hock Tan的Ethernet vs InfiniBand博弈也在演变——NVIDIA Spectrum-X已实现$60B年化营收（vs Broadcom网络业务$31B FY26），但Broadcom在Hyperscaler定制网络层面独享结构性优势（数据中心内部Ethernet互连兼容性与成本优势）。</p>
+<h3>AMD：Venice 2nm量产，Helios挑战Rubin</h3>
+<p>AMD本周最大新闻——6th Gen EPYC "Venice"在TSMC N2节点正式量产，为业界首款进入2nm量产的HPC芯片。256核、1.6TB/s内存带宽、1.7x Turín性能提升。Lisa Su同步宣布$10B+对台湾供应链投资，覆盖从晶圆制造（TSMC 2nm）到先进封装（ASE/SPIL）到载板（欣兴/南电）到系统集成（Wistron/Wistron/Inventec）的完整垂直生态。</p>
+<p>Helios整机柜AI平台（Venice CPU + MI450X GPU + 800GbE ROCm）从2026H2起部署多GW级算力——MI450X配备288-432GB HBM4，FP4约50 PFLOPS，面向Meta首个GW级部署订单。</p>
+<p>AMD预计2026年AI GPU营收达$12B，但NVIDIA数据中心单季$75.2B的体量是AMD目前全身收入（~$90亿/季度）的近9倍——差距仍在，但方向正确。</p>
+<h3>TSMC：$1.5T芯片市场预测，CoWoS产能持续爆满</h3>
+<p>TSMC在5月14日将2030年全球芯片市场预测从$1T上调至$1.5T，其中AI+HPC占55%（约$825B），智能手机占20%，汽车占10%。2026年CapEx指引$52-56B（高位区间），2nm和A16节点2026-2028年CAGR 70%，CoWoS产能2022-2027年CAGR超80%。</p>
+<p>BofA最新的CoWoS报告将2027年行业CoWoS增长率预测从57%上调至68%，称TSMC为"下一波AI浪潮最清晰赢家"。目前CoWoS 2026年WPM目标120-140k（2024年底~35k），NVIDIA占~60%、Broadcom ~15%、AMD ~11%、其余归Hyperscaler定制片。</p>
+<p>台积电表示CoWoS产能"到2026年仍完全售罄"——这意味着CoWoS是制约整个AI芯片出货的单点瓶颈，有fab capacity不等于有chip output。</p>
+<h3>存储三巨头：HBM4加速放量但供给缺口远未填平</h3>
+<p>Micron（MU）：HBM4爬坡速度是HBM3E的2倍，向Nvidia Vera Rubin出货已从3月开始。Manish Bhatia在JP Morgan大会上明确表示"看不到供给能追上需求的时点"——紧缺性将延续远超过2026年，主要客户仅能拿到50%-66%的订单分配量。HBM4E逻辑die确认由TSMC制造，1-gamma DRAM节点将成为Micron历史上最高产量的DRAM节点。</p>
+<p>SK海力士：发布iHBM技术——将冷却组件（ICE）直接嵌入HBM D2D PHY层，降低30%热阻。计划从HBM5起规模化采用。SK海力士HBM4分配维持Nvidia Rubin平台约70%份额，仍为HBM绝对王者。</p>
+<p>Samsung：推出HBM4专属SDK（软件开发套件），通过垂直整合（Memory+Foundry一体化）切入Custom HBM市场。Custom HBM设计团队从50人扩至300人，但SK海力士在HBM4世代至少领先1-1.5年，Samsung追赶仍需时间。</p>
+<h3>手机SoC：AI原生手机时代开启，格局生变</h3>
+<p>本周最震撼的手机SoC新闻——天风国际分析师郭明錤爆料OpenAI正与联发科合作开发AI Agent原生手机，搭载定制版Digital 9600 SoC（TSMC N2P 2nm），配备双NPU架构、LPDDR6、UFS 5.0。该手机主打"替代传统App式交互"，由AI Agent统一调度。郭明錤预估发布会可吸引3-5亿观众，为联发科带来极强的品牌提升效应。</p>
+<p>联发科同步推出Dimensity 9500s（TSMC 3nm N3E，旗舰Lite定位）和Dimensity 8500（4nm，中高端）——OPPO Reno16 Pro已首发9500s，Realme 16 Pro+搭载8500。Dimensity 9600后续更将是首个2nm手机SoC，单核性能预计超越Snapdragon 8 Elite。</p>
+<p>Qualcomm方面，Snapdragon 8 Elite Gen 6泄露显示GPU大幅升级（Adreno 845/850），Pro版本支持LPDDR6，GPU提升30-40%，CPU提升<20%。标准版与Pro版的分层策略愈发清晰。</p>
+<p>关键趋势：AI Agent手机将重新定义手机SoC竞争格局——不再仅看CPU/GPU跑分，NPU架构、端侧推理效率、AI生态粘性成为核心竞争维度。联发科若成功绑定OpenAI，将获得前所未有的"AI品牌溢价"。</p>
+<h3>Hyperscaler CapEx：$300B+锁定，$1T in 2年</h3>
+<p>四大CSP Q1 2026 CapEx合计$130.6B（+80% YoY），全年指引：MSFT ~$90-95B、GOOG ~$75-80B、AMZN ~$115-120B、META ~$60-65B，合计超$300B AI CapEx。Microsoft Commercial RPO doubled to $627B，Google Cloud backlog ~$460B——已签约但未确认的未来营收均翻倍以上。</p>
+<p>Jensen在Earnings Call上更激进：预测Hyperscaler CapEx"向$3-4T/year迈进，到2030年实现"。Needham分析师Laura Martin指出华尔街共识仅预期2028年$1.03T——这意味着市场严重低估了AI基建的长期支出曲线。</p>
+<h2>🔗 传导链追踪</h2>
+<h3>传导链一：AI基建CapEx → Foundry/Packaging → HBM供需 → 终端成本</h3>
+<div class="chain">graph LR
+    A["Hyperscaler CapEx 2026<br/>$300B+ (MSFT/GOOG/<br/>AMZN/META)"] 
+<span class="chain-node">    B["NVIDIA DC Revenue<br/>$75.2B/Q (Q1 FY27)<br/> </span><span class="chain-arrow"> → </span> Q2 Guide $91B"]
+    C["TSMC CoWoS 2026<br/>120-140k WPM<br/>NVDA占60%"]
+    D["HBM4加速爬坡<br/>Micron:2x HBM3E<br/>SK Hynix:70%份额"]
+    E["AI芯片出货↑<br/>但CoWoS=瓶颈<br/>非fab=瓶颈"]
+    F["存储紧缺延至>2028<br/>Micron客户仅获<br/>50-66%分配量"]
+<span class="chain-node">    G["HBM5规划启动<br/>iHBM</span><span class="chain-arrow"> → </span>HBM5散热<br/>迭代加速"]
+    
+    A -->|流向NVIDIA| B
+    B -->|流片+先进封装| C
+    C -->|HBM配量| D
+    D -->|CoWoS决定出货量| E
+    D -->|供给受限| F
+    F -->|倒逼技术迭代| G
+    E -->|NVIDIA占60%产能| C</div>
+<p>核心结论：AI投资传导链最强的节点在TSMC CoWoS——它既不是最上游（CapEx），也不是最下游（终端需求），而是物理单点瓶颈。CoWoS产能分配决定了NVIDIA、AMD、Broadcom谁能真正"出货"。</p>
+<h3>传导链二：ASIC崛起 → NVIDIA GPU份额 → Broadcom/Marvell受益</h3>
+<div class="chain">graph LR
+    A["Hyperscaler降成本<br/>+差异化需求"]
+<span class="chain-node">    B["Custom ASIC设计<br/></span><span class="chain-arrow"> → </span> 2027年与GPU<br/>需求持平(GS)"]
+    C["Broadcom 60%份额<br/>$73B backlog<br/>$100B FY27目标"]
+    D["NVIDIA GPU份额<br/>从~80-90%↓<br/>但绝对值↑"]
+    E["Marvell受益<br/>Hyperscaler<br/>定制化"]
+<span class="chain-node">    F["NVIDIA战略回应<br/></span><span class="chain-arrow"> → </span>Vera CPU+Rubin<br/>全栈垂直整合"]
+    
+    A -->|推动| B
+    B -->|龙头| C
+    B -->|施压| D
+    B -->|次要受益| E
+    D -->|倒逼| F
+    C -->|6大客户锁定| A</div>
+<p>核心结论：Custom ASIC长期侵蚀GPU份额但不意味着NVIDIA营收下降——AI整体市场扩张如此之快（CapEx $3-4T/年方向），NVIDIA GPU绝对值仍在高速增长。但If ASIC matching GPU demand by 2027, GPU market growth rate will inevitably decelerate（Goldman Sachs原话）。</p>
+<h3>传导链三：Agentic AI → CPU重返核心 → AMD Venice/Intel</h3>
+<div class="chain">graph LR
+    A["Agentic AI工作负载<br/>CPU:GPU比<br/>从1:4回至1:1"]
+<span class="chain-node">    B["低延迟推理<br/></span><span class="chain-arrow"> → </span>CPU不能少"]
+    C["AMD Venice 2nm<br/>256核, 1.7x性能<br/>TSMC N2生产"]
+    D["NVIDIA Vera CPU<br/>$200B TAM<br/>$20B已预购FY27"]
+    E["Intel ×××<br/>(尚未公开应对)"]
+<span class="chain-node">    F["server DRAM供给<br/>被HBM挤压<br/></span><span class="chain-arrow"> → </span>CPU涨价15-20%"]
+    
+    A -->|需求驱动| B
+    B -->|硬件供应商| C
+    B -->|硬件供应商| D
+    A -->|竞争空白| E
+    A -->|side-effect| F
+    C -->|确认2nm量产| C</div>
+<p>核心结论：Agentic AI将CPU从"辅助"推回"核心"地位。AMD Venice是首款2nm HPC CPU，NVIDIA Vera更是"AI原生CPU"——历史上首次，CPU不再只当配角。这将重构服务器CPU市场格局。</p>
+<h2>💬 Notable Quotes</h2>
+<blockquote>"The capex is at a trillion dollars, and it's growing toward the three to four [trillion-dollar mark]."</blockquote>
+<p>></p>
+<blockquote>— Jensen Huang, CEO NVIDIA（2026 Q1 Earnings Call, 2026-05-20）</blockquote>
+<p>中文解读：黄仁勋对AI基础设施CapEx的判断是华尔街共识的3-4倍。Needham分析师Laura Martin认为这是"颠覆性的——比超大规模云厂商自己说的还激进"。如果Jensen正确，整个AI供应链（NVDA→TSMC→HBM→电力→冷却→网络）的长期需求曲线都需要重新定价。</p>
+<blockquote>"We don't see the ability for supply to catch up to demand for the foreseeable future."</blockquote>
+<p>></p>
+<blockquote>— Manish Bhatia, EVP Global Operations, Micron（JP Morgan TMC Conference, 2026-05-20）</blockquote>
+<p>中文解读：存储紧缺"far beyond calendar 2026"——Micron的供给缺口判断极为强硬。关键客户仅能拿到50-66%订单分配量。这对MU是利好（定价权），但对AI芯片消费者（终端OEM/手机厂）是持续的成本压力。</p>
+<blockquote>"Nvidia continues to be Baird's top idea. We see a widening competitive moat."</blockquote>
+<p>></p>
+<blockquote>— Tristan Gerra, Baird（PT→$500, Street High, 2026-05-21）</blockquote>
+<p>中文解读：Baird给出华尔街最高目标价$500（当前$215），Implied Upside 132%。核心逻辑不是GPU本身，而是Vera CPU开辟$200B新TAM + Inference市场份额扩张。$500目标价意味着NVIDIA市值约$12.5T。</p>
+<blockquote>"Vera opens a brand new $200 billion TAM for Nvidia, a market we have never addressed before."</blockquote>
+<p>></p>
+<blockquote>— Jensen Huang, CEO NVIDIA（2026 Q1 Earnings Call）</blockquote>
+<p>中文解读：黄仁勋将Vera从"Grace下代"重新定义为"AI Agent原生CPU"——过去NVIDIA的CPU（Grace）更像是GPU的配套，而Vera被定位为独立产品线，面向"数十亿AI Agent"的需求。$20B FY27预购订单是一个极其强势的确认信号。</p>
+<h2>📅 重要事件日历</h2>
+<table>
+<tr><td>日期</td><td>事件</td><td>重要性</td></tr>
+<tr><td>05/20 ✅</td><td>NVIDIA Q1 FY27 Earnings</td><td>✅ 已完成（$81.6B，超预期）</td></tr>
+<tr><td>05/21 ✅</td><td>AMD Venice 2nm量产发布</td><td>✅ 已完成</td></tr>
+<tr><td>05/23 ✅</td><td>Jensen赴台/Computex AI周</td><td>🟢 进行中</td></tr>
+<tr><td>05/24-27 📍</td><td>本周 -> Computex 2026 Taipei</td><td>🟢 重点关注</td></tr>
+<tr><td>06/03</td><td>Broadcom FY26Q2 Earnings</td><td>🔴 重点关注</td></tr>
+<tr><td>06/08</td><td>Apple WWDC 2026（iOS 27/Siri Agent）</td><td>🟢</td></tr>
+<tr><td>06/09</td><td>GTC Taipei（Jensen Keynote）</td><td>🔴</td></tr>
+<tr><td>06/24</td><td>Micron FY26Q3 Earnings（GM 81%指引验证）</td><td>🔴</td></tr>
+<tr><td>H2 2026</td><td>Vera Rubin量产爬坡</td><td>🔴</td></tr>
+<tr><td>H2 2026</td><td>AMD Helios多GW部署</td><td>🟢</td></tr>
+<tr><td>09/2026</td><td>iPhone 18 Pro（A20 Pro 2nm）发布</td><td>🟢</td></tr>
+</tbody></table>
+<h2>📈 估值参考</h2>
+<table>
+<tr><td>公司</td><td>Ticker</td><td>当前价</td><td>1周变动</td><td>P/E TTM</td><td>Forward P/E</td><td>目标价</td><td>隐含空间</td><td>来源/评级</td></tr>
+<tr><td>NVIDIA</td><td>NVDA</td><td>$214.86</td><td>-3.4%</td><td>~55x</td><td>~35x</td><td>$330-$500</td><td>+53%-+133%</td><td>Wedbush/Baird 🟢</td></tr>
+<tr><td>英伟达</td><td></td><td></td><td></td><td></td><td></td><td>$299 consensus</td><td>+39%</td><td>40Buy/1Hold</td></tr>
+<tr><td>AMD</td><td>AMD</td><td>$503.89</td><td>+19.7%</td><td>~35x</td><td>~28x</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Broadcom</td><td>AVGO</td><td>$422.01</td><td>+0.3%</td><td>~30x</td><td>~24x</td><td>—</td><td>—</td><td>GS 60% ASIC share</td></tr>
+<tr><td>Marvell</td><td>MRVL</td><td>$208.26</td><td>+23.3%</td><td>~45x</td><td>~35x</td><td>—</td><td>—</td><td>GS Custom AI 2nd</td></tr>
+<tr><td>TSMC</td><td>TSM</td><td>$412.32</td><td>+4.1%</td><td>~33x</td><td>~27x</td><td>$465 (BofA)</td><td>+13%</td><td>BofA Strong Buy</td></tr>
+<tr><td>Qualcomm</td><td>QCOM</td><td>$248.82</td><td>+22.2%</td><td>~22x</td><td>~17x</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Micron</td><td>MU</td><td>$895.88</td><td>+31.5%</td><td>~8x</td><td>~7x</td><td>—</td><td>—</td><td>NTM EV/EBITDA 6.2x</td></tr>
+<tr><td>Apple</td><td>AAPL</td><td>$308.33</td><td>+3.5%</td><td>~35x</td><td>~30x</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Microsoft</td><td>MSFT</td><td>$416.03</td><td>-1.8%</td><td>~38x</td><td>~35x</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Google</td><td>GOOGL</td><td>$388.88</td><td>-2.0%</td><td>~28x</td><td>~24x</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Amazon</td><td>AMZN</td><td>$265.29</td><td>+0.2%</td><td>~35x</td><td>~30x</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Meta</td><td>META</td><td>$612.34</td><td>+0.2%</td><td>~28x</td><td>~22x</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Tesla</td><td>TSLA</td><td>$433.59</td><td>+5.8%</td><td>~110x</td><td>~85x</td><td>—</td><td>—</td><td>—</td></tr>
+</tbody></table>
+<p>重点估值观察：</p>
+<div class="cal">MU（Micron）8x P/E TTM是整个半导体板块最被低估的名字。市场仍在为2022-2023存储下行周期定价，但AI驱动的HBM结构性需求已将DRAM/NAND从周期性生意转为成长性生意。NTM EV/EBITDA 6.2x vs 行业中位数15.5x——折价60%。</div>
+<div class="cal">NVDA $500目标价（Baird） 若兑现对应~$12.5T市值，隐含2027年P/E约55x——贵但不疯狂如果$3-4T/年CapEx成为现实。</div>
+<div class="cal">TSMC $465 BofA目标价隐含13%上行空间，相对于整个AI供应链核心定位，估值仍具合理性（P/E 33x TTM，Fwd 27x，vs 年增长30%+）。</div>
+<h2>⚠️ 风险因素</h2>
+<div class="cal">🔴 高可能：AI基础设施过度建设 → 沉没资产风险 — 2026年$300B+ CapEx集中在18-24个月内，而AI营收能否同比例增长尚未验证。45%美国数据中心项目因电网限制延迟或取消。若2027-2028企业AI adoption斜率不够陡峭，已部署的GPU集群可能面临利用率不足。概率：~40%。影响：NVIDIA/AMD/Broadcom估值压缩30-40%，MU/TSMC影响相对较小（Fabless design house承担交付风险，foundry长期订单受保护）</div>
+<div class="cal">🔶 中可能：HBM4加速缩窄SK海力士领先窗口 — Micron HBM4爬坡速度2倍于HBM3E、Samsung Custom HBM SDK+垂直整合+Custom HBM团队5倍扩编，都可能加速HBM竞争格局变化。iHBM散热技术证明HBM5定义层已开启，产品更新加速意味着"领先一代"的窗口期从24个月缩至12个月。概率：~45%。影响：SK海力士HBM份额从70%降至50-55%，MU/Samsung各补个位数</div>
+<div class="cal">🔶 中可能：手机SoC格局突变 — OpenAI x MediaTek颠覆式冲击 — 若OpenAI手机（2nm Dimensity 9600/AI Agent原生OS）2027年前推出，将从根本上重写手机SoC竞争逻辑：不再是跑分+基带竞争，而是"谁能跑好大模型推理"。Qualcomm在AI Agent端的准备不足可能成为结构性风险。概率：~35%。影响：QCOM P/E从~22x向~15x压缩，MTK重新评级上行</div>
+<div class="cal">🟢 低可能：NVIDIA ASIC客户从"合作"变"替代" — 若AWS/Google/Meta内部ASIC团队成熟度在2027-2028年达到"可完全替代NVDA推理GPU"水平，NVIDIA推理收入将承受结构性压力。目前远未到这一步（Custom ASIC 2027仅与GPU需求"持平"而非"替代"）。概率：~20%。影响：NVDA P/E从~35x降向~25x（但仍维持增长）</div>
+<p>*报告生成：2026-05-27 06:00 Asia/Shanghai | Uncle Philips, Senior Semiconductor Analyst, ex-Morgan Stanley/Citigroup*</p>
+<p>*数据来源：NVIDIA IR、AMD IR、TrendForce、Reuters、Bloomberg、Tom's Hardware、Via News、Presenc AI、Digitimes、MarketBeat、JP Morgan TMC Conference*</p>
+<div class="footer">
+  由 OpenClaw AI 自动生成<br>
+  数据来源：Reuters / Bloomberg / Counterpoint Research / TrendForce / 公司财报
+</div>
+</div>
+</body>
+</html>
