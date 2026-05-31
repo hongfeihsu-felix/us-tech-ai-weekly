@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🤖 US Tech & AI Weekly</title>
+<style>
+body { background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;margin:0;padding:0; }
+.wrap { max-width:720px;margin:0 auto;padding:20px; }
+h1 { font-size:20px;font-weight:700;margin:0 0 4px 0;color:#e6edf3; }
+.date { color:#8b949e;font-size:12px;margin-bottom:24px; }
+h2 { font-size:14px;font-weight:600;color:#e6edf3;border-bottom:1px solid #30363d;padding-bottom:6px;margin:24px 0 12px 0; }
+h3 { font-size:13px;font-weight:600;color:#58a6ff;margin:16px 0 6px 0; }
+.tag { display:inline-block;background:#1f2937;border:1px solid #374151;border-radius:4px;padding:0 6px;font-size:11px;font-weight:600;color:#58a6ff;margin-right:4px; }
+table { width:100%;border-collapse:collapse;font-size:13px;margin:8px 0; }
+th { background:#161b22;color:#8b949e;font-weight:600;text-align:left;padding:8px 10px;border:1px solid #30363d;font-size:11px; }
+td { padding:8px 10px;border:1px solid #30363d;vertical-align:top; }
+tr:nth-child(even) td { background:rgba(255,255,255,0.02); }
+blockquote { border-left:3px solid #58a6ff;margin:12px 0;padding:8px 16px;background:rgba(88,166,255,0.05);border-radius:0 6px 6px 0; }
+.quote-text { font-style:italic;margin-bottom:6px; }
+.quote-src { font-size:11px;color:#8b949e; }
+.quote-cn { color:#8b949e;font-size:12px;margin-top:4px; }
+.chain { background:#161b22;border:1px solid #30363d;border-radius:8px;padding:12px 16px;font-family:'SF Mono',Consolas,monospace;font-size:12px;line-height:1.8;margin:10px 0;white-space:pre-wrap;overflow-x:auto; }
+.chain-node { color:#58a6ff; }
+.chain-arrow { color:#8b949e; }
+.cal { display:flex;gap:10px;padding:4px 0;font-size:13px; }
+.cal-date { color:#58a6ff;font-weight:600;min-width:56px; }
+.cal-tag { color:#8b949e;font-size:11px; }
+.risk-red { color:#f85149; }
+.risk-orange { color:#d29922; }
+.risk-green { color:#3fb950; }
+.footer { margin-top:32px;padding-top:16px;border-top:1px solid #30363d;color:#8b949e;font-size:11px;text-align:center; }
+p { margin:8px 0; }
+li { margin:6px 0; }
+code { background:#1f2937;padding:2px 4px;border-radius:3px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>🤖 US Tech & AI Weekly</h1><div class="date">2026/06/01</div>
+<p>2026-06-01 (Mon)</p>
+<p>*Uncle Philips · Senior Semiconductor Analyst · Former MS/Citi*</p>
+<h2>📌 Executive Summary</h2>
+<div class="cal"><span class="tag">NVIDIA</span><span class="tag">🟢Vera Rubin</span><span class="tag">COMPUTEX</span> NVIDIA FY2027 Q1创纪录营收$81.6B，DC收入$75.2B（+92% YoY），Q2指引$91B超预期。Vera CPU已交付OpenAI/Anthropic/Oracle，Jensen今日COMPUTEX主题演讲预计发布N1/N1X ARM笔记本芯片（20核CPU+6144 CUDA核心）——NVIDIA首次正式进军消费级CPU市场，Windows on Arm生态迎来颠覆性变局</div>
+<div class="cal"><span class="tag">存储危机</span><span class="tag">🔴结构性短缺</span><span class="tag">DRAM历史新高</span> DDR4 8Gb颗粒突破$20/颗历史新高（+25% MoM），Q2合约价DRAM+58-63%、NAND+70-75%。Micron FQ3（6/24）指引营收$33.5B、毛利率81%——存储已从康德拉季耶夫周期转为结构性供需紧张模式，60-70%服务器DDR5已锁定长期协议</div>
+<div class="cal"><span class="tag">Broadcom</span><span class="tag">🟢ASIC</span><span class="tag">台积电</span> Broadcom AI积压订单$730亿，确认6家XPU客户（新增Apple），首颗2nm Compute SoC进入量产。台积电CoWoS良率突破98%，3nm产能全满可能2H26涨价10-15%。台积电6/4股东会预期更新CoWoS扩产和海外布局——AI芯片最大瓶颈仍是封装产能</div>
+<div class="cal"><span class="tag">高通</span><span class="tag">🔶数据中心</span><span class="tag">手机拖累</span> Qualcomm FQ2营收$10.6B超预期，但手机收入因存储涨价压制中国OEM需求同比下降13%。重大转折：首次确认定制数据中心芯片2026年12月发货给某超大规模客户——高通的AI故事终于从"意图"进入"执行"阶段</div>
+<h2>📊 关键数据速览</h2>
+<table>
+<tr><td>指标</td><td>数值</td><td>变动</td></tr>
+<tr><td>NVIDIA Q1 FY2027营收</td><td>$81.62B</td><td>📈 +85% YoY, +21% QoQ</td></tr>
+<tr><td>NVIDIA DC收入</td><td>$75.2B</td><td>📈 +92% YoY, 占比92%</td></tr>
+<tr><td>NVIDIA Q2指引</td><td>~$91.0B</td><td>📈 超预期$86.8B</td></tr>
+<tr><td>NVIDIA $80B回购</td><td>已授权</td><td>📈 股息$0.01→$0.25/股</td></tr>
+<tr><td>DRAM合约价Q2 QoQ</td><td>+58-63%</td><td>📈 较Q1 +90-95%放缓</td></tr>
+<tr><td>DDR4 8Gb价格</td><td>$20/颗</td><td>🏆 历史新高</td></tr>
+<tr><td>NAND合约价Q2 QoQ</td><td>+70-75%</td><td>📈 首次超过DRAM增速</td></tr>
+<tr><td>Qualcomm FQ2营收</td><td>$10.6B</td><td>📉 -2.2% YoY, 超预期</td></tr>
+<tr><td>Broadcom AI积压</td><td>$730亿</td><td>📈 AI收入占比65%</td></tr>
+<tr><td>TSMC CoWoS月产能</td><td>~65K wpm(4月)</td><td>📈 2023年底15K</td></tr>
+<tr><td>TSMC CoWoS良率</td><td>98%</td><td>✅ 5.5-reticle量产品</td></tr>
+<tr><td>Micron FQ3指引营收</td><td>$33.5B</td><td>📈 指引毛利率81%</td></tr>
+<tr><td>台积电3nm全满</td><td>可能2H26涨价10-15%</td><td>📈 全球半导体现金流承压</td></tr>
+</tbody></table>
+<h2>🏢 细分领域动态</h2>
+<h3>NVIDIA：Vera时代拉开帷幕，COMPUTEX N1/N1X箭在弦上</h3>
+<p>NVIDIA 5月20日发布FY2027 Q1财报：营收$81.62B（+85% YoY），数据中心$75.2B（+92% YoY，占比92%），Q2指引$91.0B（±2%）——再次碾压华尔街$86.8B预期。Jensen Huang在电话会上给出三个核心叙事：</p>
+<p>1. Vera CPU正式出货：5月18日首批Vera CPU交付OpenAI/Anthropic/SpaceXAI/Oracle Cloud，88核自研Olympus核心、1.2TB/s内存带宽、50%单核性能提升。Vera是NVIDIA开辟的$2000亿新CPU市场，Jensen预计FY2027年内贡献$200亿营收（独立于$1万亿Blackwell+Rubin目标）</p>
+<p>2. Vera Rubin六芯片平台进入全速量产：Vera CPU + Rubin GPU + NVLink 6 + ConnectX-9 + BlueField-4 + Spectrum-X，NVL72单柜含36颗Vera CPU + 72颗Rubin GPU，近200万个零件、涉及150家台湾供应链伙伴。Jensen上周亲赴台积电台中和CC.Wei敲定CoWoS产能分配，这是"台湾历史上最大的产品量产"——Huang原话</p>
+<p>3. COMPUTEX 2026（今日！）N1/N1X ARM笔记本芯片发布：微软/NVIDIA/ARM三方同日发推"A New Era of PC"，定位台北音乐中心坐标。N1X规格已基本确认——20核ARM CPU（10+10，联发科设计） + 6144 CUDA核Blackwell GPU（RTX 5070级别） + LPDDR5X统一内存，45-80W，TSMC 3nm N3E。N1为18-45W低功耗版，12核/10核两种配置。Dell XPS首发，Lenevo Legion 7/Yoga/ASUS ProArt/MSI Surface均已备货，预计2026年底前上市</p>
+<p>竞争影响： NVIDIA N1X的发布意味着Qualcomm Snapdragon X Elite/X2将不再独享Windows on Arm授权。更致命的是N1X内置了完整的CUDA生态和RTX 5070级GPU——这是游戏玩家的终极武器，直接威胁Intel/AMD x86笔记本和Apple M系列。与联发科的联合开发模式（联发科设计CPU+基带，NVIDIA提供GPU+CUDA）开辟了崭新的"合纵连横"模式。</p>
+<h3>存储：DDR4创$20历史新高，Micron FQ3（6/24）成多空分水岭</h3>
+<p>价格追踪： DDR4 8Gb基准芯片5月均价$20/颗（+25% MoM），DRAMeXchange自2016年追踪以来最高。Q2 DRAM合约价+58-63%（Q1 +90-95%）、NAND +70-75%（首次超过DRAM）。Enterprise SSD成为最大NAND应用类别，首次超过消费级存储。</p>
+<p>结构性转变（这才是核心论点）： UBS指出，当前存储周期与历史周期有本质性差异——</p>
+<div class="cal">长协（LTA）占比快速提升：三星30%、Micron 20%、SK海力士18%的DRAM已进入LTA</div>
+<div class="cal">典型LTA结构：3年固定价+2年延期期权，或"2年固定+3年延期"</div>
+<div class="cal">服务器DDR5约60-70%已通过LTA锁定</div>
+<div class="cal">预计2027年行业20-30% DRAM量、约20% NAND量转为LTA</div>
+<p>这意味着存储正从"先产后卖"的commodity模式切换为"先单后产"的foundry模式——储盈利稳定性前所未有。但这同样意味着：价格下跌周期可能比过去更慢、更平——但绝不会消失。 Micron CEO表示"只能满足客户50-65%的需求请求"。</p>
+<p>Micron FQ3（6/24）关键催化剂： 指引收入$33.5B、毛利率~81%、non-GAAP EPS $19.15。共识预期EPS $19.62，收入$34.26B。Micron股价一年内+848%，市值突破$1T。6/24电话会的HBM/DRAM合约定价comment是判断整个存储上行周期拐点的唯一关键信号。</p>
+<p>竞争影响： SK海力士HBM市占率50-62%领先，2026年全部产能已售罄。三星是最大"变数"——HBM4能否在2H26通过NVIDIA认证是关键。如果三星落后，SK海力士溢价将维持。Micron是最干净的US-listed纯存储标的，但240%+ YTD涨幅已包含大量乐观预期。</p>
+<h3>台积电：CoWoS良率98%里程碑，股东会（6/4）聚焦涨价可能性</h3>
+<p>台积电5/14技术研讨会重磅更新：</p>
+<div class="cal">CoWoS良率突破98%：5.5-reticle版本已量产，支持12颗HBM。未来Roadmap：2028年14-reticle/20 HBM、2029年>14-reticle/24 HBM</div>
+<div class="cal">产能： 2022-2027 CoWoS CAGR >80%，2026年新建9座晶圆厂/封装设施。月产能从2023年底~15K扩至2026年4月~65K，目标年底120-140K</div>
+<div class="cal">3nm全满，涨价在即： TrendForce报道2H26可能涨价10-15%，2027年再涨5-10%</div>
+<div class="cal">全球半导体产值2030年预测上调至$1.5万亿（此前$1万亿）</div>
+<div class="cal">AI加速器晶圆需求：2022-2026增长11倍</div>
+<p>6/4股东会三大焦点：</p>
+<p>1. AI需求可见性与3nm/CoWoS定价</p>
+<p>2. 董事会扩至12人（应对全球扩张治理）</p>
+<p>3. 亚利桑那量产进度+员工利润分享</p>
+<p>NVIDIA已预占CoWoS约60%产能（~59.5万片），Broadcom约15%、AMD约11%。台积电的产能分配实际上决定了全球AI芯片的供应节奏。</p>
+<p>竞争影响： Intel Foundry在先进封装上尚未追上台积电，Samsung 3nm GAA良率仍存质疑。TSMC的2nm N2P产能2026年底目标>6万WPM且已全满——设计厂别无选择。 N2P涨价压力将进一步压缩SoC厂商利润率。</p>
+<h3>手机SoC：Qualcomm艰难过渡，数据中心初现曙光</h3>
+<p>Qualcomm FQ2（5/1）： 营收$10.6B（-2.2% YoY），手机收入$6.02B（-13% YoY），QTL稳定。但最关键的叙事变化：</p>
+<blockquote>"Qualcomm has secured a definitive agreement to supply custom data center processors to a major hyperscale cloud provider. First shipments scheduled for December 2026."</blockquote>
+<p>这是Qualcomm十年来对数据中心的最重要战略回击。基于Nuvia Oryon CPU架构的定制方案，对标AWS Graviton/Google Axion的ARM服务器芯片市场。CFO Palkhiwala在5/19 JPMorgan会议透露三个支柱：1）定制硅（2026年12月）；2）AI推理加速器（研发中）；3）云原生CPU（长期）。12月发货对FY2027是"very material"。</p>
+<p>Q3指引疲软： $9.2-10.0B（低于预期$10.2B），中国Android渠道库存仍在去化（存储涨价压制），但公司预计Q3为年内底部、Q4恢复增长。</p>
+<p>汽车业务亮点： 年化$50亿收入（+38% YoY），FY2026结束前预期$60亿+。第五代Digital Chassis平台提供3x CPU/3x GPU/12x NPU性能提升。</p>
+<p>竞争影响： Qualcomm的AI叙事终于有了DN（数据中心）维度，不再是纯掌上终端的故事。但QCOM在PC端即将面临NVIDIA N1X+微软+ARM的联军攻击，手机端面临联发科Dimensity 9600 2nm SoC（9月）竞争，两头受压格局未变。</p>
+<h3>MediaTek：Dimensity矩阵持续扩张，N1X联合开发引关注</h3>
+<p>MediaTek 5月发布两款新品：</p>
+<div class="cal">Dimensity 8550（4nm N4P）：LLM Booster + Gemini Nano V3支持，Honor 600 Pro首发</div>
+<div class="cal">Dimensity 7500（4nm）：首颗搭载ARM全新C1核心架构的移动SoC，4xC1 Pro 2.6GHz + 4xC1 Nano 2.0GHz。视频转码+68%、文件传输+40%、能效+5-9%</div>
+<p>Dimensity 9600（2nm）预计9月登场，将与Qualcomm Snapdragon 8 Elite Gen 6同步竞争。DCS爆料：2+3+3全大核架构，单核性能可能挑战Apple A20，GPU支持原生帧插值和光线追踪。</p>
+<p>最大战略卡位： 与NVIDIA联合开发N1/N1X笔记本芯片CPU部分——MTK提供ARM CPU设计、基带和SoC集成能力，NVIDIA提供Blackwell GPU和CUDA生态。这种"各取所长"的合作模式可能成为手机SoC厂商进入PC市场的蓝本。</p>
+<h3>Broadcom/Marvell：定制ASIC双寡头，差异化加速</h3>
+<p>Broadcom（AVGO $446.77）： FQ1 2026 AI收入$84亿（+106% YoY），Q2指引$107亿。$730亿AI积压订单锁定至FY2027 $1000亿目标。关键进展：</p>
+<div class="cal">Google 2031年长期协议正式化—— Broadcom为Google定制TPU至2031年</div>
+<div class="cal">新增Apple + Anthropic + FuriosaAI 进入XPU客户名单</div>
+<div class="cal">首颗2nm Compute SoC：4颗N2计算Die + 1颗I/O Die + 6颗HBM4模块</div>
+<div class="cal">Tomahawk 6（102.4 Tbps）量产出货，Jericho 4（51.2 Tbps）已发货</div>
+<div class="cal">Meta MTIA 500预告：30 PFLOPS MXFP4、384-512GB HBM、27.6TB/s带宽——性能超过NVDA/AMD同期产品</div>
+<div class="cal">AI收入占总收入65%</div>
+<p>Marvell（MRVL $205.00）： FY2026 AI ASIC营收预估$11亿（Broadcom约$120亿——8倍差距）。AWS Trainium和Microsoft Maia两大客户均处于"追赶"模式。Computex 6/2主题演讲：CEO Matt Murphy聚焦AI互联瓶颈。Google已接触Marvell开发MPU和下一代TPU变体——但这是2028年之后的收入事件。</p>
+<p>竞争影响： Broadcom的ASIC模式（78.6%毛利率+资本轻型）正在证明比NVIDIA的垂直整合模式更优——尽管NVIDIA的$1万亿Blackwell/Rubin是一个不同量级的目标。Broadcom捕获AI基建的经济价值，NVIDIA捕获市场想象——两者可以同时成立。</p>
+<h3>苹果：A20 Pro 2nm首秀，iPhone 18 Pro九月登场</h3>
+<p>Apple A20 Pro芯片预期规格：</p>
+<div class="cal">TSMC N2 2nm制程：CPU性能+15%，能效+30%</div>
+<div class="cal">首次采用Wafer-Level Multi-Chip Module（WMCM）：SoC与DRAM在晶圆级直接集成，无需interposer</div>
+<div class="cal">RAM升级至12GB</div>
+<div class="cal">9月iPhone 18 Pro/Pro Max发布</div>
+<div class="cal">基础款iPhone 18推迟至2027年春季（存储器成本压力导致分化策略）</div>
+<p>iPhone 18 Pro Max电池预计5,100-5,200mAh（史上最大），搭配A20 Pro的30%能效提升，续航表现值得期待。</p>
+<p>竞争影响： Apple的2nm A20 Pro将进一步提升iPhone端侧AI能力。对比之下，Qualcomm和MediaTek选择更贵的TSMC N2P节点追赶。Apple再次用"旧节点+极致架构优化"策略对抗对手的"新节点+高成本"路线。</p>
+<h2>🔗 传导链追踪</h2>
+<h3>传导链一：存储结构性涨价 + AI芯片扩产博弈</h3>
+<p><pre class="chain"></p>
+<p>AI数据中心需求加速（2025Q3起）</p>
+<p>  → HBM产能2025Q4满载，SK海力士售罄至2027年底</p>
+<p>    → DRAM合约价Q1 2026 +90-95%（历史峰值区间）</p>
+<p>      → DDR4 8Gb突破$20历史新高（2026年5月）</p>
+<p>        → 消费电子BOM大涨，存储BOM占比翻倍</p>
+<p>          → 中国手机OEM下调全年出货目标（小米/OPPO/vivo）</p>
+<p>            → SoC厂（高通/联发科）削减投片10-15%</p>
+<p>              → 存储厂改变商业模型：从commodity→LTA长协模式</p>
+<p>                → 三星/SK海力士/Micron优先扩产HBM，牺牲消费级产能</p>
+<p>                  → 存储从"周期性"切换为"结构性紧张"（UBS论点）</p>
+<p>                    → ⚠️ Micron 6/24财报：HBM合约定价决定多空</p>
+<p>                      → 新产能投入（Micron Idaho/三星Texas/SK Indiana）：2027年底~2028</p>
+<p></pre></p>
+<p>关键观察点： 本次存储周期与历史周期的核心差异在于结构性产能再分配——三大厂已将大量wafer产能从消费级转向HBM/服务器级，消费级DRAM的"永久性"供给收缩是基础性的供需关系变化，而非周期性的供应控制。 这意味着：即使AI需求降温，消费级内存价格也很难回落到2024年水平。</p>
+<h3>传导链二：NVIDIA N1X + Windows on ARM = PC生态重塑</h3>
+<p><pre class="chain"></p>
+<p>NVIDIA FY2027 Q1业绩超预期（$81.6B, +85% YoY）</p>
+<p>  → Vera CPU交付OpenAI/Anthropic/SpaceXAI（5/18）</p>
+<p>    → Vera Rubin平台进入全速量产（6芯片系统）</p>
+<p>      → Jensen访台敲定TSMC CoWoS产能分配（5/23）</p>
+<p>        → COMPUTEX 2026 发布N1/N1X（6/1）</p>
+<p>          → NVIDIA首次拥有消费级CPU产品线</p>
+<p>            → 联发科设计CPU+基带 / NVIDIA提供Blackwell GPU+CUDA</p>
+<p>              → Windows on Arm生态获得第二家SoC供应商（打破Qualcomm独占）</p>
+<p>                → Dell/ASUS/Lenovo/MSI笔记本首发（2026Q4）</p>
+<p>                  → x86笔记本市场（Intel/AMD）承受2027年结构性压力</p>
+<p>                    → Qualcomm Snapdragon C/X系列面临前后夹击</p>
+<p></pre></p>
+<p>关键观察点： NVIDIA N1X的战略意义不仅在于"又一款ARM PC芯片"——它是第一款内置CUDA核心和RTX 5070显卡的笔记本SoC。这意味着在Windows生态中，首次出现"一台笔记本=一台游戏PC"的可能性。Apple M系列的"统一内存+高集成度"优势被NVIDIA的CUDA+RTX生态反超。这个产品的最大风险是功耗和散热——45-80W在ARM笔记本中偏高。</p>
+<h2>💬 Notable Quotes</h2>
+<blockquote>"We should be growing faster than hyperscale capex."<div class="quote-text">— Jensen Huang, CEO, NVIDIA（FY2027 Q1电话会，2026-05-20）</div></blockquote>
+<blockquote>"I expect Vera to be the second largest sales contributor beyond the $1 trillion in Blackwell and Rubin chips."<div class="quote-text">— Jensen Huang, CEO, NVIDIA（FY2027 Q1电话会，2026-05-20）</div><div class="quote-text">中文解读： Vera CPU独立贡献$200亿，而Blackwell+Rubin在2025-2027年合计$1万亿——但Vera开辟的是CPU市场，这对NVIDIA是一次市场空间倍增。</div></blockquote>
+<blockquote>"Higher memory costs could significantly affect consumer electronics prices. It's a very important form of inflation."<div class="quote-text">— Jensen Huang, CEO, NVIDIA（台北机场访谈，2026-05-23）</div><div class="quote-text">中文解读： 芯片行业最具影响力的人物亲自喊话存储厂扩产——因为Vera Rubin每套系统都需要大容量HBM，NVIDIA是存储涨价的最大受害者之一。</div></blockquote>
+<blockquote>"This is arguably the largest product launch, probably in the history of Taiwan."<div class="quote-text">— Jensen Huang, CEO, NVIDIA（描述Vera Rubin平台，2026-05-23）</div></blockquote>
+<blockquote>"We have essentially sold out of our entire HBM inventory through 2027."<div class="quote-text">— Dr. Jung-hyun Kwon, SVP DRAM Planning, SK Hynix（2026Q1电话会）</div><div class="quote-text">中文解读： 8个月前说的话，现在依然是事实。HBM产能已锁定至2027年底——意味着任何超预期的新需求都必须等排产。</div></blockquote>
+<blockquote>"Memory stopped trading like a commodity because, for now, it stopped behaving like one — and the whole trade lives or dies on a single number: HBM contract pricing, next read on 24 June."<div class="quote-text">— iPrompt Research（2026-05-29）</div><div class="quote-text">中文解读： 最精辟的市场总结。存储估值重估的生死线就是6/24 Micron财报的合约价comment。</div></blockquote>
+<h2>📅 重要事件日历</h2>
+<table>
+<tr><td>日期</td><td>事件</td><td>关注度</td></tr>
+<tr><td>05/13~14</td><td>台积电台湾技术研讨会 ✅CoWoS 98%良率+涨信号</td><td>🔴极高</td></tr>
+<tr><td>05/14</td><td>Qualcomm Snapdragon C $300笔记本平台发布</td><td>🔶中</td></tr>
+<tr><td>05/18</td><td>NVIDIA Vera CPU首批交付客户 ✅</td><td>🔴极高</td></tr>
+<tr><td>05/20</td><td>NVIDIA FY2027 Q1财报 ✅营收$81.6B+Q2指引$91B</td><td>🔴极高</td></tr>
+<tr><td>05/21</td><td>Broadcom JPMorgan会议首个2nm Compute SoC ✅</td><td>🔴高</td></tr>
+<tr><td>05/23</td><td>Jensen赴台积电谈CoWoS产能分配 ✅</td><td>🔴极高</td></tr>
+<tr><td>05/26</td><td>存储长协LTA重构行业报告 ✅</td><td>🔴高</td></tr>
+<tr><td>05/29</td><td>DDR4创$20历史新高 ✅</td><td>🔴高</td></tr>
+<tr><td>06/01（今天）</td><td>🔴 NVIDIA COMPUTEX主题演讲（台北音乐中心11AM）</td><td>🔴极高</td></tr>
+<tr><td>06/02</td><td>🔴 Marvell COMPUTEX主题演讲（AI互联瓶颈）</td><td>🔴高</td></tr>
+<tr><td>06/04</td><td>🔴 台积电股东会（CoWoS扩产+3nm涨价+亚利桑那）</td><td>🔴极高</td></tr>
+<tr><td>06/02~06/05</td><td>COMPUTEX 2026</td><td>🔴高</td></tr>
+<tr><td>06/09</td><td>Apple WWDC 2026</td><td>🔶中</td></tr>
+<tr><td>06/24</td><td>🟠 Micron FQ3财报（存储周期多空分水岭）</td><td>🔴极高</td></tr>
+<tr><td>07/29</td><td>AMD Q2 2026财报</td><td>🔶中</td></tr>
+<tr><td>09月</td><td>iPhone 18 Pro/Pro Max发布（A20 Pro 2nm）</td><td>🔴高</td></tr>
+<tr><td>09月</td><td>MediaTek Dimensity 9600发布</td><td>🔴高</td></tr>
+<tr><td>09月</td><td>Qualcomm Snapdragon 8 Elite Gen 6发布</td><td>🔴高</td></tr>
+<tr><td>12月</td><td>Qualcomm数据中心定制芯片首发</td><td>🔴高</td></tr>
+</tbody></table>
+<h2>📈 估值参考</h2>
+<table>
+<tr><td>公司</td><td>现价</td><td>前收盘</td><td>周涨跌</td><td>P/E TTM</td><td>Forward P/E</td><td>目标价</td><td>评级</td><td>来源</td></tr>
+<tr><td>NVDA (NVIDIA)</td><td>$211.14</td><td>$219.51</td><td>-3.8%</td><td>~45x</td><td>~30x</td><td>$250</td><td>🟢买入</td><td>Goldman Sachs</td></tr>
+<tr><td>AMD (AMD)</td><td>$516.10</td><td>$449.59</td><td>+14.8%</td><td>~38x</td><td>~28x</td><td>$165(拆分调整)</td><td>🟢买入</td><td>Morgan Stanley</td></tr>
+<tr><td>QCOM (Qualcomm)</td><td>$251.02</td><td>$213.41</td><td>+17.6%</td><td>~25x</td><td>~15x</td><td>$220~$250</td><td>🟢买入</td><td>多重</td></tr>
+<tr><td>AVGO (Broadcom)</td><td>$446.77</td><td>$414.57</td><td>+7.8%</td><td>~30x</td><td>~28x</td><td>$500+</td><td>🟢强烈买入</td><td>自研</td></tr>
+<tr><td>MRVL (Marvell)</td><td>$205.00</td><td>$190.69</td><td>+7.5%</td><td>~35x</td><td>~28x</td><td>$220</td><td>🟢买入</td><td>Melius</td></tr>
+<tr><td>TSM (台积电)</td><td>$418.45</td><td>$407.15</td><td>+2.8%</td><td>~24x</td><td>~21x</td><td>$450</td><td>🟢强烈买入</td><td>Goldman Sachs</td></tr>
+<tr><td>MU (Micron)</td><td>$971.00</td><td>$762.10</td><td>+27.4%</td><td>~44x</td><td>~32x</td><td>—</td><td>🟡中性</td><td>自研</td></tr>
+<tr><td>MSFT (Microsoft)</td><td>$450.24</td><td>$419.09</td><td>+7.4%</td><td>~30x</td><td>~28x</td><td>$500</td><td>🟢买入</td><td>Goldman Sachs</td></tr>
+<tr><td>GOOGL (Google)</td><td>$380.34</td><td>$387.66</td><td>-1.9%</td><td>~22x</td><td>~20x</td><td>$420</td><td>🟢买入</td><td>Goldman Sachs</td></tr>
+<tr><td>AMZN (Amazon)</td><td>$270.64</td><td>$268.46</td><td>+0.8%</td><td>~35x</td><td>~32x</td><td>$300</td><td>🟢买入</td><td>Goldman Sachs</td></tr>
+<tr><td>META (Meta)</td><td>$632.51</td><td>$607.38</td><td>+4.1%</td><td>~25x</td><td>~22x</td><td>$700</td><td>🟢强烈买入</td><td>Loop Capital</td></tr>
+<tr><td>AAPL (Apple)</td><td>$312.06</td><td>$304.99</td><td>+2.3%</td><td>~28x</td><td>~26x</td><td>$350</td><td>🟢买入</td><td>Morgan Stanley</td></tr>
+<tr><td>TSLA (Tesla)</td><td>$435.79</td><td>$417.85</td><td>+4.3%</td><td>~75x</td><td>N/A</td><td>—</td><td>🟡中性</td><td>自研</td></tr>
+</tbody></table>
+<p>估值注释：</p>
+<div class="cal">MU P/E偏高因市场已定价"存储结构性重估"——但$971价格下几乎没有安全边际</div>
+<div class="cal">NVDA $30x Forward P/E在超预期财报和$91B Q2指引下具有吸引力——但Vera/Rubin供给受限是短期压制</div>
+<div class="cal">QCOM P/E折价反映了市场对手机下行+DC尚未贡献的耐心——但DC定制芯片12月发货是FY2027的变盘信号</div>
+<div class="cal">MRVL Forward P/E 28x已不够便宜——Google TPU收入在2028年之后，当前价格包含了太多未来叙事</div>
+<h2>⚠️ 风险因素</h2>
+<div class="cal">🔴高可能（~60%）：存储合约价2027H1拐点风险——虽然LTA长协将平缓价格下跌斜率，但三大厂扩产HBM4产能2027年开始释放、消费级需求难以消化AI驱动的超高价格，Micron指引的81%毛利率不可持续。下半年任何HBM合约价环比下跌的信号都将触发存储股的剧烈回调。</div>
+<div class="cal">🔴高可能（~55%）：N1X供应链/量产出货推迟——NVIDIA N1X是3nm+ARM+Blackwell+CUDA的"四合一"超级整合，历史上NVIDIA在消费级SoC的量产纪录不佳（Tegra系列）。若N1X遭遇类似此前N1的"严重硬件故障"延迟，Windows on Arm生态将遭受信心打击。</div>
+<div class="cal">🔶中可能（~45%）：中国手机市场进一步恶化——Qualcomm Q3指引已隐含中国Android出货底部判断。但若存储价格持续上涨超预期（DDR4> $25），中国OEM可能进一步削减订单，将拖累联发科和高通Q4展望。</div>
+<div class="cal">🔶中可能（~40%）：Hyperscaler Capex减速风险——$700亿+的2026年Hyperscaler AI支出是天量数字，但NVDA的$75.2B DC收入+Q2 $91B指引中已包含大量"超前预订"。任何一家Hyperscaler（Google/MSFT/AMZN）下调2027 CAPEX指引都将引发全行业估值重构。</div>
+<div class="cal">🟢低可能（~20%）：台积电产能地缘风险——6/4股东会的"董事会扩大"信号暗示台积电在为地缘政治做准备。台海局势的任何恶化将直接冲击全球AI芯片供应的90%以上。</div>
+<p>*报告生成：2026-06-01 06:00 Asia/Shanghai | Uncle Philips, Senior Semiconductor Analyst*</p>
+<p>*数据来源：NVIDIA IR、Qualcomm IR、TrendForce、DRAMeXchange、UBS、GS、Reuters、Bloomberg、Tom's Hardware、ComputerBase、VideoCardz、TechSpot、The Verge、GSMArena、NAND Research、WinBuzzer、TrendForce*</p>
+<blockquote>免责声明： 本报告仅供信息参考，不构成投资建议。作者可能持有文中提及的证券头寸。</blockquote>
+<p>*📬 每周一早6:00自动发送 | 如需调整覆盖范围或报告格式，请回复告知*</p>
+<div class="footer">
+  由 OpenClaw AI 自动生成<br>
+  数据来源：Reuters / Bloomberg / Counterpoint Research / TrendForce / 公司财报
+</div>
+</div>
+</body>
+</html>
